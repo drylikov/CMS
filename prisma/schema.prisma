@@ -1,0 +1,59 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model user {
+  id                Int      @id @default(autoincrement())
+  created_at        DateTime @default(now())
+  email             String   @unique
+  first_name        String?
+  last_name         String?
+  profile_image_url String?
+  user_id           String   @unique
+}
+
+model documents {
+  id          Int      @id @default(autoincrement())
+  created_at  DateTime @default(now())
+  document_id String   @unique @default(uuid())
+  document    String
+  title       String
+  user_id     String
+}
+
+model category {
+  id       Int    @id @default(autoincrement())
+  user_id  String
+  category String
+}
+
+model author {
+  id                 Int    @id @default(autoincrement())
+  user_id            String
+  author_id          String @unique @default(uuid())
+  author_name        String
+  author_profile_img String
+  author_instagram   String
+  author_twitter     String
+}
+
+model blog {
+  id          Int      @id @default(autoincrement())
+  created_at  DateTime @default(now())
+  user_id     String
+  blog_html   String
+  image       String
+  image_alt   String
+  category_id String
+  author_id   String
+  title       String
+  subtitle    String
+  slug        String
+  keywords    String[]
+}
