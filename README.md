@@ -1,13 +1,4 @@
 <h1 align="center">SupaNext: Opensource Blog CMS</h1>
-<div>
-    <div align="center">
-        <a href="https://twitter.com/rasmickyy">
-            <img src="https://img.shields.io/badge/X/Twitter-000000?style=for-the-badge&logo=x&logoColor=white" />
-        </a>
-        <a href="https://www.youtube.com/@rasmic">
-            <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
-        </a>
-    </div>
 
 SupaNext CMS is a blog CMS built using Nextjs, Supabase, Tiptap, and Uploadthing. The purpose behind it is to have one CMS for all websites I build that might need a blog. I dreaded reading the docs of various CMS's so I decided to build my own.
 
@@ -76,8 +67,3 @@ yarn dev
 ## Contributing
 
 Contributions to the project are welcome. Feel free to fork the repository, make your changes, and submit a pull request. You can also open issues to suggest improvements or report bugs.
-
-
-## License
-
-This project is licensed under the MIT License.
