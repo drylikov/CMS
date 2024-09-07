@@ -27,7 +27,7 @@ SupaNext CMS is a blog CMS built using Nextjs, Supabase, Tiptap, and Uploadthing
 
 1. Clone the repository:
     ```
-    git clone https://github.com/michaelshimeles/cms.git
+    git clone https://github.com/drylikov/CMS.git
     ```
 2. Install the required dependencies:
     ```
